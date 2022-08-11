@@ -16,7 +16,7 @@ def ingest_file(filename: pathlib.Path, mode='rb') -> bytearray:
     return bytearray(tf.read())
 
 
-def handle(filename: pathlib.Path):
+def handle(filename: pathlib.Path, output: pathlib.Path):
     hex_array = ingest_file(filename)
     side = math.ceil(math.sqrt(math.ceil(len(hex_array) / 3.0)))
     padding_needed = ((3 * side) ** 2) - len(hex_array)
@@ -28,4 +28,4 @@ def handle(filename: pathlib.Path):
     scale = 50
 
     img = img.resize((side * scale, side * scale), resample=0)
-    img.save('output.png', quality=100)
+    img.save(output, quality=100)
