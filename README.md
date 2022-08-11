@@ -10,7 +10,7 @@ python -m runner image ./data/archive.tar.gz image.png
 
 For now, output_file must be a format that PIL can write to (like PNG, BMP, JPG, etc)
 
-![Example output](examples/output.png?raw=true "For example")
+![Image Example](examples/output.png?raw=true "For example")
 
 
 ## Audio
@@ -25,4 +25,8 @@ Use something like timidity (`brew install timidity`) in conjunction with ffmpeg
 timidity input_file.mid -Ow -o - | ffmpeg -i - -acodec libmp3lame -ab 64k output_file.mp3
 ```
 
-![Example output](examples/output.mp3?raw=true "Audio example")
+![Audio Example]( "Audio example")
+
+<audio controls>
+  <source src="examples/output.mp3?raw=true" type="audio/mpeg" />
+</audio>
