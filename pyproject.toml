@@ -10,6 +10,9 @@ python = "^3.9"
 typer = "^0.6.1"
 numpy = "^1.23.1"
 Pillow = "^9.2.0"
+mido = "^1.2.10"
+python-rtmidi = "^1.4.9"
+black = "^22.6.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.1.2"
