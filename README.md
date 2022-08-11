@@ -25,6 +25,4 @@ Use something like timidity (`brew install timidity`) in conjunction with ffmpeg
 timidity input_file.mid -Ow -o - | ffmpeg -i - -acodec libmp3lame -ab 64k output_file.mp3
 ```
 
-<audio controls>
-  <source src="examples/output.mp3" type="audio/mpeg" />
-</audio>
+https://github.com/lescalier/tart/blob/master/examples/output.mp3?raw=true
